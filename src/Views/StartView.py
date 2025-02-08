@@ -1,4 +1,3 @@
-# Refactored StartView.py
 
 from src.Classes.Base.ABaseView import ABaseView
 from src.Views.FormViews.ForgotPasswordFormView import ForgotPasswordFormView
