@@ -1,19 +1,11 @@
 # Refactored HomeView.py
+from src.Classes.Base.ABaseView import ABaseView
 
-from Views.UserClient import UserHomeView
 
-class HomeView:
+class HomeView(ABaseView):
     def __init__(self):
         self._choice = 0
         self.menu_list = []
-
-    @property
-    def choice(self):
-        return self._choice
-
-    @choice.setter
-    def choice(self, value):
-        self._choice = value
 
     def load_menu_list(self):
         self.menu_list = [
@@ -126,7 +118,7 @@ class AfterUserSignInView:
 
             if choice == 1:
                 print("🔗 Redirecting to Dashboard...")
-                UserHomeView().view()  # Assume UserHomeView exists
+                UserHomeView().View()  # Assume UserHomeView exists
 
             elif choice == 2:
                 self.view_profile()

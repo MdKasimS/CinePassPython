@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Views/FormViews/SignInFormView.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/HomeView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/HomeView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/SignInView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/SignInView.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/StartView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StartView.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
@@ -51,15 +56,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.SignInFormView.executor": "Run",
     "Python.StartView.executor": "Run",
     "Python.main.executor": "Run",
     "Python.models.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Projects/Products/PyCharm/CinePass/src/Views"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Products\PyCharm\CinePass\src\Views" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

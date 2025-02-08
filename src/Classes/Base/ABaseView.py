@@ -4,7 +4,7 @@ from typing import List
 from src.Classes.Base.ABaseSingleton import SingletonMeta
 
 
-class ABaseView(ABC, SingletonMeta):
+class ABaseView(metaclass=SingletonMeta):
     """Base class for Views ensuring singleton behavior and enforcing menu structure."""
 
     MenuList: List[str]  # Explicitly declare the type for IDE support
@@ -12,7 +12,7 @@ class ABaseView(ABC, SingletonMeta):
     Choice: int
 
     def __init__(self):
-        super().__init__(self)
+        super().__init__()
         self.MenuList: List[str] = []  # List of menu options
         self.Menu: dict = {}  # Dictionary mapping menu options to functions
         self.Choice = 0

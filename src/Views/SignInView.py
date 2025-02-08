@@ -2,10 +2,7 @@
 
 import os
 from Credential import Credential  # Ensure Credential.py exists
-from Views import SignInView  # Ensure SignInViewModel.py exists
-from Views.AdminClient import AdminHomeView  # Ensure AdminHomeView.py exists
-from Views.FormViews import SignUpFormView  # Ensure SignUpFormView.py exists
-from Views.FormViews import ForgotPasswordFormView  # Ensure ForgotPasswordFormView.py exists
+
 
 class SignInView:
     def __init__(self):
@@ -66,16 +63,16 @@ class SignInView:
                 authentication_result = SignInView.Instance.sign_in()
                 if authentication_result.is_successful:
                     print("✅ Login Successful! Redirecting to Admin Home...")
-                    AdminHomeView.Instance.view()
+                    AdminHomeView.Instance.View()
                 else:
                     print(f"❌ {authentication_result.message}")
                     input("🔄 Press Enter to continue...")
             elif self.choice == 4:
                 print("📝 Redirecting to Sign-Up...")
-                SignUpFormView.Instance.view()
+                SignUpFormView.Instance.View()
             elif self.choice == 5:
                 print("🔄 Redirecting to Forgot Password...")
-                ForgotPasswordFormView.Instance.view()
+                ForgotPasswordFormView.Instance.View()
             elif self.choice == 6:
                 print("🔃 Resetting form...")
                 SignInView.Instance.reset_form_command()

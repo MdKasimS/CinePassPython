@@ -1,28 +1,13 @@
-# Refactored StartView.py
+from abc import ABC
 
 from src.Classes.Base.ABaseView import ABaseView
-from src.Views.FormViews.ForgotPasswordFormView import ForgotPasswordFormView
-from src.Views.FormViews.SignInFormView import SignInFormView
 
 
-class StartView(ABaseView):
-    def __init__(self):
-        super().__init__()
-        self.MenuList = [
-            "1. Login",
-            "2. Sign Up",
-            "3. Forgot Password",
-            "4. Exit"
-        ]
-        self.Menu = {
-            1: SignInFormView.View,
-            # 2: SignUpFormView.View,
-            3: ForgotPasswordFormView.View,
-        }
+class SignInFormView(ABaseView):
 
     def View(self):
+        while self.Choice != len(self.MenuList):
 
-        while self.Choice!= len(self.MenuList):
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
             print("🏠 Home - CineComplex")
@@ -38,7 +23,22 @@ class StartView(ABaseView):
                 print("❌ Invalid choice. Please enter a number.")
                 continue
 
+            # if(self.Menu.keys()choice
             self.Choice = int(choice)
 
-            app = self.Menu[self.Choice]
-            app()
+
+    def __init__(self):
+        super().__init__()
+        self.MenuList = [
+            "1. Enter Login Id ",
+            "2. Enter Password ",
+            "3. Login ",
+            "4. Sign Up ",
+            "5. Forgot Password ",
+            "6. Reset Form ",
+            "7. Exit",
+        ]
+        self.Menu = {
+
+        }
+        self.Choice = 0
