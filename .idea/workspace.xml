@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Views/FormViews/SignInFormView.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/HomeView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/HomeView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/SignInView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/SignInView.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/StartView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StartView.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>

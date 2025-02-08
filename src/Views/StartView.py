@@ -22,7 +22,7 @@ class StartView(ABaseView):
 
     def View(self):
 
-        while self.Choice!= len(self.MenuList):
+        while self.Choice!= len(self.Menu):
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
             print("🏠 Home - CineComplex")
