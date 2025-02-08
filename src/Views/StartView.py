@@ -1,3 +1,5 @@
+# Refactored StartView.py
+
 from HomeView import HomeView  # ✅ Import HomeView
 from Views.FormViews import ForgotPasswordFormView  # ✅ Import ForgotPasswordFormView
 

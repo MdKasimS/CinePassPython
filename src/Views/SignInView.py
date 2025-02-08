@@ -1,3 +1,5 @@
+# Refactored SignInView.py
+
 import os
 from Credential import Credential  # Ensure Credential.py exists
 from Views import SignInView  # Ensure SignInViewModel.py exists

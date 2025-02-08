@@ -1,14 +1,13 @@
-class Seat:
-    # Initialize the static dictionary to prevent issues with null references
-    _seats = {}
+from sqlalchemy import Column, Integer, String, ForeignKey
+from Database.models import Base
 
-    @staticmethod
-    def get_seats():
-        return Seat._seats
+class Seat(Base):
+    __tablename__ = "seats"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    seat_number = Column(String, nullable=False)
+    is_reserved = Column(Integer, default=0)
+    show_id = Column(Integer, ForeignKey("shows.id"), nullable=False)
 
-    @staticmethod
-    def set_seats(value):
-        if value is None:
-            Seat._seats = {}
-        else:
-            Seat._seats = value
+    def __repr__(self):
+        return f"Seat(ID={self.id}, SeatNumber={self.seat_number}, Reserved={self.is_reserved})"

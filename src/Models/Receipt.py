@@ -1,14 +1,14 @@
-class Receipt:
-    # Initialize the static dictionary to prevent null reference issues
-    _receipts = {}
+from sqlalchemy import Column, Integer, ForeignKey
+from sqlalchemy.orm import relationship
+from Database.models import Base
 
-    @staticmethod
-    def get_receipts():
-        return Receipt._receipts
+class Receipt(Base):
+    __tablename__ = "receipts"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    bill_id = Column(Integer, ForeignKey("bills.id"), nullable=False)
 
-    @staticmethod
-    def set_receipts(value):
-        if value is None:
-            Receipt._receipts = {}
-        else:
-            Receipt._receipts = value
+    bill = relationship("Bill")
+
+    def __repr__(self):
+        return f"Receipt(ID={self.id}, BillID={self.bill_id})"

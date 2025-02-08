@@ -1,10 +1,15 @@
-class Bill:
-    _bills = {}
+from sqlalchemy import Column, Integer, ForeignKey
+from sqlalchemy.orm import relationship
+from Database.models import Base
 
-    @classmethod
-    def get_bills(cls):
-        return cls._bills
+class Bill(Base):
+    __tablename__ = "bills"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    booking_id = Column(Integer, ForeignKey("bookings.id"), nullable=False)
+    amount = Column(Integer, nullable=False)
 
-    @classmethod
-    def set_bills(cls, bills):
-        cls._bills = bills
+    booking = relationship("Booking")
+
+    def __repr__(self):
+        return f"Bill(ID={self.id}, BookingID={self.booking_id}, Amount={self.amount})"

@@ -1,3 +1,5 @@
+# Refactored ManageTicketsView.py
+
 class ManageTicketsView:
     def __init__(self):
         self._choice = 0

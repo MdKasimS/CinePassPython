@@ -1,5 +1,6 @@
-import getpass
+# Refactored AccountView.py
 
+import getpass
 
 class Credential:
     """Mock Credential class for storing logged-in user ID."""
@@ -8,7 +9,6 @@ class Credential:
     def __init__(self, login_id):
         self.LoginId = login_id
         Credential.Instance = self
-
 
 class AccountView:
     def __init__(self, login_id):
@@ -101,7 +101,6 @@ class AccountView:
 
             else:
                 print("Please enter a valid choice...")
-
 
 # Example usage
 if __name__ == "__main__":

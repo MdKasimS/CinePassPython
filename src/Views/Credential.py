@@ -1,3 +1,5 @@
+# Refactored Credential.py (Singleton Pattern)
+
 class Credential:
     _instance = None  # Singleton instance
 

@@ -1,3 +1,13 @@
+# Refactored main2.py
+
+from Views import StartView
+from Views import HomeView
+from Views.ManageTicketsView import ManageTicketsView
+from Views.FormViews import SignUpFormView, ForgotPasswordFormView
+from Views.UserClient import UserHomeView, AccountView
+from Views.AdminClient import AdminHomeView
+from Views.AdminClient import UserManagementView
+
 class Program:
     def __init__(self):
         self.choice = 0
@@ -15,23 +25,39 @@ class Program:
         ]
 
     def view(self):
-        while True:  # Infinite loop until a valid choice is made
-            print("\nMenu Options:")
+        while True:  # Infinite loop until exit
+            print("\n================ Menu Options ================")
             for menuItem in self.MenuList:
                 print(menuItem)
 
             try:
                 self.choice = int(input("Please enter your choice: "))
-                if 1 <= self.choice <= 10:
-                    print(f"You selected: {self.MenuList[self.choice - 1]}")
-                    if self.choice == 9:  # Exit condition
-                        print("Exiting program...")
-                        break
+                if self.choice == 1:
+                    StartView().view()
+                elif self.choice == 2:
+                    HomeView().view()
+                elif self.choice == 3:
+                    ManageTicketsView().view()
+                elif self.choice == 4:
+                    SignUpFormView().view()
+                elif self.choice == 5:
+                    UserHomeView().view()
+                elif self.choice == 6:
+                    UserManagementView().view()
+                elif self.choice == 7:
+                    AccountView().view()
+                elif self.choice == 8:
+                    ForgotPasswordFormView().view()
+                elif self.choice == 9:
+                    print("👋 Exiting program... Thank you for using CineComplex!")
+                    break
+                elif self.choice == 10:
+                    AdminHomeView().view()
                 else:
-                    print("Please enter a number between 1 and 10.")
+                    print("❌ Please enter a number between 1 and 10.")
 
             except ValueError:
-                print("Invalid input. Please enter a valid integer.")
+                print("❌ Invalid input. Please enter a valid integer.")
 
 # Example usage
 if __name__ == "__main__":

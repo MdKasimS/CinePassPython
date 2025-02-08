@@ -1,5 +1,4 @@
-from abc import ABC
-
-class IException(ABC, Exception):
-    """Base class for custom exceptions in the application."""
-    pass
+class IException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+        self.message = message

@@ -1,3 +1,5 @@
+# Refactored UserManagementView.py
+
 from tabulate import tabulate
 import psycopg2
 from typing import List

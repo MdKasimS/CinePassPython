@@ -1,4 +1,3 @@
-# Import required view models from the views package
 from Views.SignInView import SignInView
 from Views.UserClient import UserHomeView
 from Views.AdminClient import AdminHomeView

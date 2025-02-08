@@ -1,35 +1,21 @@
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
+from sqlalchemy.orm import relationship
 from datetime import datetime
+from Database.models import Base
 
-class Booking:
-    _bookings = {}
-
-    def __init__(self, show_id: int, customer_name: str, number_of_seats: int, seat_type: str, email: str, amount_to_pay: float):
-        self.booking_id = self.generate_booking_id()  # Must start from 1000
-        self.show_id = show_id
-        self.customer_name = customer_name
-        self.number_of_seats = number_of_seats
-        self.seat_type = seat_type
-        self.email = email
-        self.amount = amount_to_pay
-        self.booking_status = None
-        self.booking_date = datetime.now()
-        self.seat_numbers = []
+class Booking(Base):
+    __tablename__ = "bookings"
     
-    @classmethod
-    def generate_booking_id(cls):
-        """ Generate unique booking ID starting from 1000 """
-        return 1000 + len(cls._bookings)
+    id = Column(Integer, primary_key=True, index=True)
+    show_id = Column(Integer, ForeignKey("shows.id"), nullable=False)
+    customer_name = Column(String, nullable=False)
+    number_of_seats = Column(Integer, nullable=False)
+    seat_type = Column(String, nullable=False)
+    email = Column(String, nullable=False)
+    amount = Column(Integer, nullable=False)
+    booking_date = Column(DateTime, default=datetime.utcnow)
 
-    @classmethod
-    def get_bookings(cls):
-        return cls._bookings
-
-    @classmethod
-    def set_bookings(cls, bookings):
-        cls._bookings = bookings
+    show = relationship("Show")
 
     def __repr__(self):
-        return (f"Booking(BookingId={self.booking_id}, ShowId={self.show_id}, "
-                f"CustomerName={self.customer_name}, Seats={self.number_of_seats}, "
-                f"SeatType={self.seat_type}, Email={self.email}, Amount={self.amount}, "
-                f"Status={self.booking_status}, Date={self.booking_date})")
+        return f"Booking(ID={self.id}, ShowID={self.show_id}, Customer={self.customer_name}, Seats={self.number_of_seats})"

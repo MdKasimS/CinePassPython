@@ -1,3 +1,5 @@
+# Refactored AfterUserSignInView.py
+
 class AfterUserSignInView:
     def __init__(self, username):
         """Initialize the view after user sign-in."""
@@ -45,7 +47,6 @@ class AfterUserSignInView:
 
             else:
                 print("❌ Invalid selection. Try again.")
-
 
 # Example Usage
 if __name__ == "__main__":

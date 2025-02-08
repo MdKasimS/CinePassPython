@@ -1,4 +1,7 @@
+# Refactored HomeView.py
+
 from Views.UserClient import UserHomeView
+
 class HomeView:
     def __init__(self):
         self._choice = 0

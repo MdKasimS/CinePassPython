@@ -1,3 +1,5 @@
+# Refactored ForgotPasswordFormView.py
+
 import psycopg2
 import bcrypt
 
@@ -9,7 +11,6 @@ DB_CONFIG = {
     "host": "localhost",
     "port": "5432",
 }
-
 
 class ForgotPasswordFormView:
     def __init__(self):
@@ -55,7 +56,6 @@ class ForgotPasswordFormView:
                 continue
 
             if self.choice == 1:
-                # Handle User Id logic
                 self.user_id = input("Enter User ID: ")
                 if self.validate_user(field="id", value=self.user_id):
                     print("User ID verified.")
@@ -63,7 +63,6 @@ class ForgotPasswordFormView:
                     print("Invalid User ID. Please try again.")
 
             elif self.choice == 2:
-                # Handle Email logic
                 email = input("Enter Email: ")
                 if self.validate_user(field="email", value=email):
                     print("Email verified.")
@@ -71,7 +70,6 @@ class ForgotPasswordFormView:
                     print("Invalid Email. Please try again.")
 
             elif self.choice == 3:
-                # Handle Contact logic
                 contact = input("Enter Contact: ")
                 if self.validate_user(field="contact", value=contact):
                     print("Contact verified.")
@@ -114,7 +112,6 @@ class ForgotPasswordFormView:
         new_password = input()
         hashed_password = bcrypt.hashpw(new_password.encode('utf-8'), bcrypt.gensalt())
 
-        # Update password in the database
         try:
             conn = self.get_connection()
             cursor = conn.cursor()
@@ -125,7 +122,6 @@ class ForgotPasswordFormView:
             print("Password has been successfully updated!")
         except psycopg2.Error as e:
             print(f"Error updating password: {e}")
-
 
 # Example usage
 if __name__ == "__main__":

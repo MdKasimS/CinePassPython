@@ -1,6 +1,7 @@
+# Refactored SignUpFormView.py
+
 import getpass
 import re
-
 
 class SignUpFormViewModel:
     def __init__(self):
@@ -31,7 +32,6 @@ class SignUpFormViewModel:
         """Validate email format."""
         pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
         return re.match(pattern, email)
-
 
 class SignUpFormView:
     def __init__(self):
@@ -95,7 +95,6 @@ class SignUpFormView:
 
             else:
                 print("Please enter a valid choice...")
-
 
 # Example usage
 if __name__ == "__main__":

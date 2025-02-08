@@ -1,5 +1,6 @@
-import random
+# Refactored UserHomeView.py
 
+import random
 
 class AccountView:
     """Mock AccountView class with user details."""
@@ -19,7 +20,6 @@ class AccountView:
         print(f"Contact: {self.contact}")
         print(f"Balance: ₹{self.balance}")
         print("========================")
-
 
 class UserHomeView:
     def __init__(self):
@@ -138,7 +138,6 @@ class UserHomeView:
 
             else:
                 print("❌ Please enter a valid choice...")
-
 
 # Example usage
 if __name__ == "__main__":
