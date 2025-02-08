@@ -2,6 +2,7 @@
 from src.Classes.Base.ABaseView import ABaseView
 from src.Views.FormViews.ForgotPasswordFormView import ForgotPasswordFormView
 from src.Views.FormViews.SignInFormView import SignInFormView
+from src.Views.FormViews.SignUpFormView import SignUpFormView
 
 
 class StartView(ABaseView):
@@ -15,7 +16,7 @@ class StartView(ABaseView):
         ]
         self.Menu = {
             1: lambda: SignInFormView().View(),
-            # 2: SignUpFormView.View,
+            2: lambda: SignUpFormView().View(),
             # 3: lambda: ForgotPasswordFormView().View(),
         }
 

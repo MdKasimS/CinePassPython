@@ -1,7 +1,4 @@
-from abc import ABC
-
 from src.Classes.Base.ABaseView import ABaseView
-
 
 class SignInFormView(ABaseView):
 
@@ -11,7 +8,7 @@ class SignInFormView(ABaseView):
 
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
-            print("🏠 Home - CineComplex")
+            print("🏠 Sign In - CineComplex")
             print("-------------------------------------------------")
             print("\nMenu:")
             print("---------------")

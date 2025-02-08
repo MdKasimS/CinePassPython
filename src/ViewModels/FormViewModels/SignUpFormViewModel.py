@@ -1,25 +1,59 @@
-from sqlalchemy.orm import Session
-from Models.User import User
 from werkzeug.security import generate_password_hash
 
-class SignUpFormViewModel:
-    def __init__(self, db_session: Session):
-        self.db_session = db_session
+from src.Classes.Base.ABaseViewModel import ABaseViewModel
+from src.Models.SQLInteraction import SQLInteraction
+from src.Models.User import User
 
-    def register_user(self, username: str, email: str, password: str, contact: str):
-        existing_user = self.db_session.query(User).filter(User.email == email).first()
+
+class SignUpFormViewModel(ABaseViewModel):
+    def __init__(self):
+        super().__init__()
+        self.Name = ""
+        self.Email = ""
+        self.Contact = ""
+        self.Password = ""
+
+
+    def SignUp(self):
+
+        existing_user = (SQLInteraction()
+                         .Db.query(User)
+                         .filter(User.email == self.Email).first())
+
         if existing_user:
             return False  # Email already exists
 
         new_user = User(
-            username=username,
-            email=email,
-            password_hash=generate_password_hash(password),
-            contact=contact
+            username = self.Name,
+            email = self.Email,
+            password = generate_password_hash(self.Password),
+            contact = self.Contact
         )
-        self.db_session.add(new_user)
-        self.db_session.commit()
+
+        SQLInteraction().Db.add(new_user)
+        SQLInteraction().Db.commit()
+
         return True
+
+    def SetUserName(self):
+        self.Name = input("Enter User Name: ")
+
+    def SetUserEmail(self):
+        self.Email = input("Enter Email: ")
+
+    def SetUserPassword(self):
+        self.Password = input("Enter Password: ")
+
+    def SetUserContact(self):
+        self.Contact = input("Enter Contact: ")
+
+    def ResetFormData(self):
+        self.Name = ""
+        self.Email = ""
+        self.Password = ""
+        self.Contact = ""
+
+
 
     def __repr__(self):
         return "SignUpFormViewModel(Handles user registration operations)"

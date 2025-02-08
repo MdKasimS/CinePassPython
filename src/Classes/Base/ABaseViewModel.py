@@ -3,4 +3,6 @@ from src.Classes.Base.ABaseSingleton import SingletonMeta
 
 class ABaseViewModel(metaclass=SingletonMeta):
     """Base class for ViewModels ensuring singleton behavior."""
-    pass
+
+    def __init__(self):
+        super().__init__()
