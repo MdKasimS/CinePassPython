@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="" />
+    <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IEntityModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IException.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IUtility.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IView.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IViewModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/StartView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StartView.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

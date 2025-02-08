@@ -1,7 +1,6 @@
 # Refactored StartView.py
 
 from HomeView import HomeView  # ✅ Import HomeView
-from Views.FormViews import ForgotPasswordFormView  # ✅ Import ForgotPasswordFormView
 
 class StartView:
     def __init__(self):

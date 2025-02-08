@@ -1,6 +1,6 @@
-from src.Classes.Base.ABaseSingleton import SingletonMeta
+from src.Classes.Base.ABaseSingleton import Singleton
 
 
-class ABaseView(metaclass=SingletonMeta):
+class ABaseView(Singleton):
     """Base class for Views ensuring singleton behavior."""
     pass
