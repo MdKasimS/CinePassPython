@@ -1,18 +1,23 @@
-from abc import abstractmethod
+from abc import abstractmethod, ABC
+from typing import List
 
 from src.Classes.Base.ABaseSingleton import SingletonMeta
 
 
-class ABaseView(SingletonMeta):
-    """Base class for Views ensuring singleton behavior."""
+class ABaseView(ABC, SingletonMeta):
+    """Base class for Views ensuring singleton behavior and enforcing menu structure."""
+
+    MenuList: List[str]  # Explicitly declare the type for IDE support
+    Menu: dict  # Explicitly declare the type for IDE support
+    Choice: int
+
     def __init__(self):
+        super().__init__(self)
+        self.MenuList: List[str] = []  # List of menu options
+        self.Menu: dict = {}  # Dictionary mapping menu options to functions
         self.Choice = 0
-        self.MenuList = []
-        self.Menu = {}
 
     @abstractmethod
     def View(self):
-        pass
-
-    def LoadMenuList(self):
+        """This method must be implemented by derived classes to define view behavior."""
         pass

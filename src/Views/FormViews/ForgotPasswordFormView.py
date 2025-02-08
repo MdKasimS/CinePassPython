@@ -3,14 +3,6 @@
 import psycopg2
 import bcrypt
 
-# PostgreSQL connection configuration
-DB_CONFIG = {
-    "dbname": "your_database",
-    "user": "your_user",
-    "password": "your_password",
-    "host": "localhost",
-    "port": "5432",
-}
 
 class ForgotPasswordFormView:
     def __init__(self):

@@ -5,7 +5,7 @@ from Views import StartView
 
 class Program:
     def __init__(self):
-        self.App = StartView();
+        self.App = StartView
 
 # Example usage
 if __name__ == "__main__":
