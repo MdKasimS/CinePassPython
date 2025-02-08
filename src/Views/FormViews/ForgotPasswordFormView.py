@@ -17,7 +17,6 @@ class ForgotPasswordFormView(ABaseView):
             for instr in self.MenuList:
                 print(instr)
 
-            choice = input("Enter Your Choice: ")
 
     def __init__(self):
         super().__init__()
@@ -25,7 +24,9 @@ class ForgotPasswordFormView(ABaseView):
         self.MenuList = [
 
         ]
-        self.Menu = None
+        self.Menu = {
+
+        }
 
 
 

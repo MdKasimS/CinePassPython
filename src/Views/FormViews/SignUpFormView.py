@@ -52,7 +52,8 @@ class SignUpFormView(ABaseView):
         }
 
 
-    def ShowFormData(self):
+    @staticmethod
+    def ShowFormData():
         print(f"Enter Name:{SignUpFormViewModel().Name}")
         print(f"Enter Email:{SignUpFormViewModel().Email}")
         print(f"Enter Contact:{SignUpFormViewModel().Contact}")

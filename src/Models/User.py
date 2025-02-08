@@ -1,6 +1,5 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime, Boolean
+from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import declarative_base
-from werkzeug.security import generate_password_hash, check_password_hash
 
 # from src.Classes.Base.ABaseModel import ABaseModel
 

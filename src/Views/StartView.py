@@ -1,6 +1,4 @@
-
 from src.Classes.Base.ABaseView import ABaseView
-from src.Views.FormViews.ForgotPasswordFormView import ForgotPasswordFormView
 from src.Views.FormViews.SignInFormView import SignInFormView
 from src.Views.FormViews.SignUpFormView import SignUpFormView
 
@@ -22,7 +20,7 @@ class StartView(ABaseView):
 
     def View(self):
 
-        while self.Choice!= len(self.MenuList):
+        while self.Choice != len(self.MenuList):
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
             print("🏠 Home - CineComplex")
@@ -43,4 +41,3 @@ class StartView(ABaseView):
 
             if app is not None:
                 app()
-
