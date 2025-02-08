@@ -1,9 +1,15 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime, Boolean
+from sqlalchemy.orm import declarative_base
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from src.Classes.Base.ABaseModel import ABaseModel
+# from src.Classes.Base.ABaseModel import ABaseModel
 
-class User(ABaseModel):
+Base = declarative_base()
+
+class User(Base):
+
+    def display_info(self):
+        pass
 
     __tablename__ = "users"
 
