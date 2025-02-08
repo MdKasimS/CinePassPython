@@ -16,12 +16,12 @@ class StartView(ABaseView):
         self.Menu = {
             1: lambda: SignInFormView().View(),
             # 2: SignUpFormView.View,
-            3: lambda: ForgotPasswordFormView().View(),
+            # 3: lambda: ForgotPasswordFormView().View(),
         }
 
     def View(self):
 
-        while self.Choice!= len(self.Menu):
+        while self.Choice!= len(self.MenuList):
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
             print("🏠 Home - CineComplex")
@@ -32,19 +32,14 @@ class StartView(ABaseView):
             for instr in self.MenuList:
                 print(instr)
 
-            choice = input("🎯 Enter Your Choice: ").strip()
-            if not choice.isdigit():
+            try:
+                self.Choice = int(input("🎯 Enter Your Choice: ").strip())
+            except:
                 print("❌ Invalid choice. Please enter a number.")
                 continue
 
-            self.Choice = int(choice)
+            app = self.Menu.get(self.Choice)
 
-            app = self.Menu[self.Choice]
-           #  print(app)
-           #  input()
-           #  app()
-           #
-        if choice in self.Menu:
-            self.Menu[self.Choice]()  # ✅ Calls the lambda, creating an instance and executing View()
-        else:
-            print("Invalid choice!")
+            if app is not None:
+                app()
+
