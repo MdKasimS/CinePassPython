@@ -15,9 +15,9 @@ class StartView(ABaseView):
             "4. Exit"
         ]
         self.Menu = {
-            1: SignInFormView.View,
+            1: SignInFormView().View,
             # 2: SignUpFormView.View,
-            3: ForgotPasswordFormView.View,
+            3: ForgotPasswordFormView().View,
         }
 
     def View(self):
@@ -40,5 +40,6 @@ class StartView(ABaseView):
 
             self.Choice = int(choice)
 
-            app = self.Menu[self.Choice]
-            app()
+            # app = self.Menu[self.Choice]
+            # app()
+            self.Menu[choice]().View()

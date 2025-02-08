@@ -1,7 +1,6 @@
 # Refactored main.py
 
 
-from src.Views.FormViews.SignInFormView import SignInFormView
 from src.Views.StartView import StartView
 
 
@@ -12,4 +11,5 @@ class Program:
 # Example usage
 if __name__ == "__main__":
     program = Program()
+    print("Hello")
     program.App.View()
