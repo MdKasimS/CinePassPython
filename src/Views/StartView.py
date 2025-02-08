@@ -15,9 +15,9 @@ class StartView(ABaseView):
             "4. Exit"
         ]
         self.Menu = {
-            1: SignInFormView().View,
+            1: lambda: SignInFormView().View(),
             # 2: SignUpFormView.View,
-            3: ForgotPasswordFormView().View,
+            3: lambda: ForgotPasswordFormView().View(),
         }
 
     def View(self):
@@ -40,6 +40,12 @@ class StartView(ABaseView):
 
             self.Choice = int(choice)
 
-            # app = self.Menu[self.Choice]
-            # app()
-            self.Menu[choice]().View()
+            app = self.Menu[self.Choice]
+           #  print(app)
+           #  input()
+           #  app()
+           #
+        if choice in self.Menu:
+            self.Menu[self.Choice]()  # ✅ Calls the lambda, creating an instance and executing View()
+        else:
+            print("Invalid choice!")

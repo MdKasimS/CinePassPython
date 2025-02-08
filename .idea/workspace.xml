@@ -36,6 +36,9 @@
     &quot;accountId&quot;: &quot;2a967ea2-cc89-48ff-a797-b508859a0724&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -51,7 +54,7 @@
   "keyToString": {
     "Python.SignInFormView.executor": "Run",
     "Python.StartView.executor": "Run",
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "Python.models.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -139,11 +142,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Views/StartView.py</url>
           <line>36</line>
           <option name="timeStamp" value="13" />
@@ -157,6 +155,36 @@
           <url>file://$PROJECT_DIR$/src/Views/StartView.py</url>
           <line>24</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Classes/Base/ABaseView.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Classes/Base/ABaseView.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Views/FormViews/SignInFormView.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Views/FormViews/SignInFormView.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

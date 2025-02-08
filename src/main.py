@@ -1,8 +1,4 @@
-# Refactored main.py
-
-
-from src.Views.StartView import StartView
-
+from Views.StartView import StartView
 
 class Program:
     def __init__(self):
