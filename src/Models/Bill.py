@@ -1,8 +1,10 @@
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from Database.models import Base
 
-class Bill(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Bill(ABaseModel):
     __tablename__ = "bills"
     
     id = Column(Integer, primary_key=True, index=True)

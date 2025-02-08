@@ -5,8 +5,6 @@ from Views import HomeView
 from Views.ManageTicketsView import ManageTicketsView
 from Views.FormViews import SignUpFormView, ForgotPasswordFormView
 from Views.UserClient import UserHomeView, AccountView
-from Views.AdminClient import AdminHomeView
-from Views.AdminClient import UserManagementView
 
 class Program:
     def __init__(self):

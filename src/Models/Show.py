@@ -1,7 +1,9 @@
 from sqlalchemy import Column, Integer, DateTime, ForeignKey
-from Database.models import Base
 
-class Show(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Show(ABaseModel):
     __tablename__ = "shows"
     
     id = Column(Integer, primary_key=True, index=True)

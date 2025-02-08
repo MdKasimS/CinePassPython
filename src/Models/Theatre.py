@@ -1,7 +1,8 @@
 from sqlalchemy import Column, Integer, String
-from Database.models import Base
+from src.Classes.Base.ABaseModel import ABaseModel
 
-class Theatre(Base):
+
+class Theatre(ABaseModel):
     __tablename__ = "theatres"
     
     id = Column(Integer, primary_key=True, index=True)

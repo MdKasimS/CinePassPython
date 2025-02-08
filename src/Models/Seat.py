@@ -1,7 +1,9 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
-from Database.models import Base
 
-class Seat(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Seat(ABaseModel):
     __tablename__ = "seats"
     
     id = Column(Integer, primary_key=True, index=True)

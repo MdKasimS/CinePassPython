@@ -1,8 +1,10 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
-from Database.models import Base
 
-class Auth(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Auth(ABaseModel):
     __tablename__ = "auth"
 
     id = Column(Integer, primary_key=True, index=True)

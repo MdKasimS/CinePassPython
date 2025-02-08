@@ -1,8 +1,10 @@
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from datetime import datetime, timedelta
-from Database.models import Base
 
-class Session(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Session(ABaseModel):
     __tablename__ = "sessions"
     
     id = Column(Integer, primary_key=True, index=True)

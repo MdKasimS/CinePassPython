@@ -1,7 +1,10 @@
 from sqlalchemy import Column, Integer, String
 from Database.models import Base
 
-class Credential(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Credential(ABaseModel):
     __tablename__ = "credentials"
     
     id = Column(Integer, primary_key=True, index=True)

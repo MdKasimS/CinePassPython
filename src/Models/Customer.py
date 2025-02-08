@@ -1,7 +1,9 @@
 from sqlalchemy import Column, Integer, String
-from Database.models import Base
 
-class Customer(Base):
+from src.Classes.Base.ABaseModel import ABaseModel
+
+
+class Customer(ABaseModel):
     __tablename__ = "customers"
     
     id = Column(Integer, primary_key=True, index=True)
