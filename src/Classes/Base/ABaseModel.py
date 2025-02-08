@@ -5,4 +5,7 @@ Base = declarative_base()
 
 class ABaseModel(Base):
     __abstract__ = True
-    id = Column(Integer, primary_key=True, index=True)
+
+    def __init__(self):
+        super().__init__()
+
