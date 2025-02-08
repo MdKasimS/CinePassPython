@@ -2,7 +2,7 @@
 
 from database_manager import init_db, get_session
 from postgresql_models import User, Admin, Booking, Show, Movie, Theatre, Seat
-from main2 import Program  # Import the main menu system
+from main import Program  # Import the main menu system
 from datetime import datetime
 
 # Initialize database

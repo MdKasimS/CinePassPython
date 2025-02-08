@@ -1,4 +1,4 @@
-# Refactored main2.py
+# Refactored main.py
 
 from Views import StartView
 from Views import HomeView
