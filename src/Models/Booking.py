@@ -1,9 +1,10 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from Database.models import Base
+from src.Classes.Base.ABaseModel import ABaseModel
 
-class Booking(Base):
+
+class Booking(ABaseModel):
     __tablename__ = "bookings"
     
     id = Column(Integer, primary_key=True, index=True)
@@ -19,3 +20,5 @@ class Booking(Base):
 
     def __repr__(self):
         return f"Booking(ID={self.id}, ShowID={self.show_id}, Customer={self.customer_name}, Seats={self.number_of_seats})"
+
+

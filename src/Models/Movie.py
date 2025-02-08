@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float
-from Database.models import Base
+from src.Classes.Base.ABaseModel import ABaseModel
 
-class Movie(Base):
+class Movie(ABaseModel):
     __tablename__ = "movies"
     
     id = Column(Integer, primary_key=True, index=True)
