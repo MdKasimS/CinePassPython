@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseSingleton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Base/ABaseView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IEntityModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IException.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IService.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IUtility.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IView.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IViewModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/StartView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StartView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,15 +98,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/postgresql_models.py</url>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

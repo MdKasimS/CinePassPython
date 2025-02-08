@@ -1,8 +1,8 @@
-from src.Classes.Base.ABaseSingleton import Singleton
+from src.Classes.Base.ABaseSingleton import SingletonMeta
 from src.Classes.SQL.CinePassDb import CinePassDb
 
 
-class SQLInteraction(Singleton):
+class SQLInteraction(SingletonMeta):
     """Singleton class to provide a single session instance for database interactions."""
 
     def __init__(self):

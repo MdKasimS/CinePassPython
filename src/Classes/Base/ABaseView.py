@@ -1,6 +1,18 @@
-from src.Classes.Base.ABaseSingleton import Singleton
+from abc import abstractmethod
+
+from src.Classes.Base.ABaseSingleton import SingletonMeta
 
 
-class ABaseView(Singleton):
+class ABaseView(SingletonMeta):
     """Base class for Views ensuring singleton behavior."""
-    pass
+    def __init__(self):
+        self.Choice = 0
+        self.MenuList = []
+        self.Menu = {}
+
+    @abstractmethod
+    def View(self):
+        pass
+
+    def LoadMenuList(self):
+        pass

@@ -1,9 +1,9 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
-from src.Classes.Base.ABaseSingleton import Singleton
+from src.Classes.Base.ABaseSingleton import SingletonMeta
 
 
-class CinePassDb(Singleton):
+class CinePassDb(SingletonMeta):
     """Singleton class to manage PostgreSQL database connection and session."""
 
     def __init__(self):
