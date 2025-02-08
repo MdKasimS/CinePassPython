@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Theatre.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Theatre.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ViewModels/FormViewModels/ForgotPasswordFormViewModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ViewModels/ManageTicketsViewModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ViewModels/SignInViewModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/HomeView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/HomeView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/UserClient/AccountView.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/UserClient/UserHomeView.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Bill.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Booking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Credential.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Customer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Movie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Receipt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Seat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Session.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Show.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Theatre.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/ManageTicketsView.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/StartView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StartView.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +168,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Views/StartView.py</url>
-          <line>43</line>
+          <line>41</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -174,7 +183,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py</url>
-          <line>8</line>
+          <line>9</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -185,10 +194,10 @@
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Views/StartView.py" line="24">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Views/StartView.py" line="22">
         <watch expression="len(self.Menu)" />
       </inline-watch>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Views/StartView.py" line="43">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Views/StartView.py" line="41">
         <watch expression="app is not None" />
       </inline-watch>
     </watches-manager>
