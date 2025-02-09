@@ -7,6 +7,6 @@ class Program:
 
 # Example usage
 if __name__ == "__main__":
-    sql = SQLInteraction()
+    sql = lambda: SQLInteraction()
     program = Program()
     program.App.View()

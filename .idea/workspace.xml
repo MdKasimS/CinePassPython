@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4f1bea-8f02-4684-be4a-13a481ce7261" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Bill.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Booking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Credential.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Customer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Movie.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Receipt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Seat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Session.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Show.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Theatre.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/ForgotPasswordFormView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/FormViews/SignUpFormView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/ManageTicketsView.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/StartView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StartView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/SQLInteraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/SQLInteraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Main.executor": "Run",
     "Python.SignInFormView.executor": "Run",
     "Python.StartView.executor": "Run",
     "Python.main.executor": "Run",
@@ -84,7 +72,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CinePass" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +85,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="SCRIPT_NAME" value="E:\Projects\Products\PyCharm\CinePass\src\Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -182,14 +170,19 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py</url>
+          <url>file://$PROJECT_DIR$/src/Main.py</url>
           <line>9</line>
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Models/SQLInteraction.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="30" />
+          <line>8</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Classes/SQL/CinePassDb.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

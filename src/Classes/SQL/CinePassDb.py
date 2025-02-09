@@ -9,8 +9,8 @@ class CinePassDb(metaclass=SingletonMeta):
 
     def __init__(self):
         super().__init__()
-        self.engine = create_engine("postgresql://admin:root@localhost/CinePassDb")
-        self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
+        self.engine = lambda:create_engine("postgresql://admin:root@localhost/CinePassDb")
+        self.SessionLocal = lambda:sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
         self._session = None
 
     def get_session(self):
