@@ -1,5 +1,6 @@
 from src.Classes.Base.ABaseView import ABaseView
 
+
 class SignInFormView(ABaseView):
 
     def View(self):
@@ -18,7 +19,8 @@ class SignInFormView(ABaseView):
 
             try:
                 self.Choice = int(input("🎯 Enter Your Choice: ").strip())
-            except:
+            except Exception as e:
+                print(f"Error : {e}")
                 print("❌ Invalid choice. Please enter a number.")
                 continue
 
@@ -26,7 +28,6 @@ class SignInFormView(ABaseView):
 
             if app is not None:
                 app()
-
 
     def __init__(self):
         super().__init__()
@@ -40,8 +41,6 @@ class SignInFormView(ABaseView):
             "7. Exit",
         ]
 
-        self.Menu = {
-
-        }
+        self.Menu = {}
 
         self.Choice = 0

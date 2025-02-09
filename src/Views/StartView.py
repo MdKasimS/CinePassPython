@@ -6,12 +6,7 @@ from src.Views.FormViews.SignUpFormView import SignUpFormView
 class StartView(ABaseView):
     def __init__(self):
         super().__init__()
-        self.MenuList = [
-            "1. Login",
-            "2. Sign Up",
-            "3. Forgot Password",
-            "4. Exit"
-        ]
+        self.MenuList = ["1. Login", "2. Sign Up", "3. Forgot Password", "4. Exit"]
         self.Menu = {
             1: lambda: SignInFormView().View(),
             2: lambda: SignUpFormView().View(),
@@ -33,7 +28,8 @@ class StartView(ABaseView):
 
             try:
                 self.Choice = int(input("🎯 Enter Your Choice: ").strip())
-            except:
+            except Exception as e:
+                print(f"Error : {e}")
                 print("❌ Invalid choice. Please enter a number.")
                 continue
 

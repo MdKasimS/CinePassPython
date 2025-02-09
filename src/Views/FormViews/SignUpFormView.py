@@ -22,7 +22,8 @@ class SignUpFormView(ABaseView):
 
             try:
                 self.Choice = int(input("🎯 Enter Your Choice: ").strip())
-            except:
+            except Exception as e:
+                print(f"Error : {e}")
                 print("❌ Invalid choice. Please enter a number.")
                 continue
 
@@ -30,7 +31,6 @@ class SignUpFormView(ABaseView):
 
             if app is not None:
                 app()
-
 
     def __init__(self):
         super().__init__()
@@ -48,9 +48,8 @@ class SignUpFormView(ABaseView):
             1: lambda: SignUpFormViewModel().SetUserName(),
             2: lambda: SignUpFormViewModel().SetUserEmail(),
             3: lambda: SignUpFormViewModel().SetUserContact(),
-            4: lambda: SignUpFormViewModel().SetUserPassword()
+            4: lambda: SignUpFormViewModel().SetUserPassword(),
         }
-
 
     @staticmethod
     def ShowFormData():
