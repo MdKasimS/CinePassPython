@@ -1,6 +1,8 @@
 from src.Classes.Base.ABaseView import ABaseView
 from src.Views.FormViews.SignInFormView import SignInFormView
 from src.Views.FormViews.SignUpFormView import SignUpFormView
+import os
+import sys
 
 
 class StartView(ABaseView):
@@ -16,6 +18,7 @@ class StartView(ABaseView):
     def View(self):
 
         while self.Choice != len(self.MenuList):
+            # os.system("cls")
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
             print("🏠 Home - CineComplex")

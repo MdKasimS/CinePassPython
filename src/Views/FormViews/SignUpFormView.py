@@ -8,6 +8,7 @@ class SignUpFormView(ABaseView):
 
         while self.Choice != len(self.MenuList):
 
+            # TODO: Create definition for this part. Do not repeat yourself
             print("\n\t----- !!! Salam Hindusthan !!! -----")
             print("================================================")
             print("🏠 Sign Up - CineComplex")
@@ -45,10 +46,12 @@ class SignUpFormView(ABaseView):
         ]
 
         self.Menu = {
-            1: lambda: SignUpFormViewModel().SetUserName(),
-            2: lambda: SignUpFormViewModel().SetUserEmail(),
-            3: lambda: SignUpFormViewModel().SetUserContact(),
-            4: lambda: SignUpFormViewModel().SetUserPassword(),
+            1: SignUpFormViewModel().SetUserName(),
+            2: SignUpFormViewModel().SetUserEmail(),
+            3: SignUpFormViewModel().SetUserContact(),
+            4: SignUpFormViewModel().SetUserPassword(),
+            5: SignUpFormViewModel().SignUp(),
+            6: SignUpFormViewModel().ResetFormData(),
         }
 
     @staticmethod
